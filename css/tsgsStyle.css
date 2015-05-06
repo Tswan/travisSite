@@ -1,0 +1,544 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face{
+	font-family:"tuffy";
+	src: url(Tuffy.ttf) format("truetype");
+	
+}
+
+body
+{
+	background-color:#99ddff;
+	min-width:320px;
+}
+
+h1{
+	font-family:"Tuffy", Verdana, Tahoma;
+	font-size:26pt;
+	text-align:center;
+	
+	color:black;
+	
+	
+}
+
+h3{
+	font-family:"Tuffy", Verdana, Tahoma;
+	font-size:16pt;
+	
+	color:black;
+}
+
+h4{
+	font-family:"Tuffy", Verdana, Tahoma;
+	font-size:14pt;
+	
+	color:black;
+}
+
+p
+{
+	font-family:"Tuffy", Verdana, Tahoma;
+	font-size:13pt;
+	
+	color:black;
+}
+	#welcome 
+{
+	  display: inline-block;
+  	  font-size: 50px;
+  	  padding: 3px 20px;
+  	  border: 4px solid white;
+  	  color: white;
+	
+}
+
+#header
+{
+	/*position:relative;*/
+	position:absolute;
+	left:0px;
+	top:0px;
+	right:0px;
+	/*margin-left:-10px;
+	margin-right:-10px;*/
+	width:100%;
+	height:105px;
+	/*background-image:url(title2.png);
+	background-repeat:no-repeat;*/
+	border-bottom:medium inset black;
+}
+
+#banner {
+	display: inline-block;
+	margin: 0 auto;
+	width: 70vw;
+}
+
+#name
+{
+	position:absolute;
+	margin-left:20%;
+	bottom:-13px;
+	color: white;
+}
+
+#PortfolioTitle
+{
+	position:absolute;
+	right:20%;
+	bottom:-13px;
+	color:#99ddff;
+}
+
+#ContactTitle
+{
+	position:absolute;
+	left: 20%;
+	bottom:-13px;
+	color:#3399ee;
+}
+
+#title
+{
+	position:absolute;
+	top:5px;
+	left:20px;
+	width:300px;
+	height:105px;
+	background-image:url(title3.png);
+	background-repeat:no-repeat;
+}
+
+#navi
+{
+	/*position:relative;*/
+	position:absolute;
+	left:0px;
+	top:113px;
+	right:0px;
+	/*margin-left:-10px;
+	margin-right:-10px;*/
+	width:100%;
+	height:30px;
+	border-top: solid 3px white;
+	padding-top:5px;
+	text-align:center;
+	border-bottom:solid 3px #000;
+}
+
+#body
+{
+	
+	position:absolute;
+	right:0px;
+	/*margin-left:-10px;
+	margin-right:-10px;*/
+	left:0px;
+	/*position:relative;*/
+	top:158px;
+	border-top: medium solid #FFF;
+	/*background-color:red;*/
+	width:100%;
+	min-height:800px;
+	padding-top:10px;
+	padding-bottom:20px;
+	height:auto;
+	
+	
+	
+}
+
+
+#inner
+{
+	
+	min-width:280px;
+	width:80%;	
+	margin:0 auto;
+	/*border: solid 3px black;	*/
+	padding-top:10px;
+	padding-left:5px;
+	padding-right:5px;
+	padding:10px 5px 15px 5px;
+}
+
+/* Home Page */
+.resume
+{ 	
+	width:250px;
+}
+
+
+.galPic
+{
+	min-width:240px;
+	width:70%;	
+	max-width:500px;
+}
+
+#viewer
+{
+	min-width:240px;
+	width:70%;	
+}
+ .cont2
+ {
+	 margin: 0px 5%;
+ }
+ 
+.cont1
+{
+	width:auto;
+	height:auto;
+	max-width:700px;
+	margin: 0 auto;
+	
+	
+	
+}
+
+#linksContainer {
+	margin: 40px auto 0px;
+ 	position: relative;
+  	width: 100%;
+  	text-align: center;
+}
+
+
+
+/*SPECIAL FOR GALLERIA*/
+
+#galleria
+{
+	width:80vw;
+	margin:0 auto;
+	margin-top: 50px;
+
+}
+
+@media (min-width: 501) and (max-width:857px)
+{
+
+	
+	#galleria
+	{
+		width:90vw;
+		margin:0 auto;
+		margin-top: 50px;
+	
+	}
+	
+	
+}
+
+@media (min-width:858px)
+{
+	#welcome 
+{
+	  display: inline-block;
+  	  font-size: 100px;
+  	  padding: 3px 30px;
+  	  border: 4px solid white;
+  	  color: white;
+	
+}
+
+	
+	.cont1
+	{
+		
+	}
+	#title
+	{
+		position:absolute;
+		top:5px;
+		left:30%;
+		width:300px;
+		height:105px;
+		background-image:url(title3.png);
+		background-repeat:no-repeat;
+	}
+	
+	.resume
+	{
+		position:relative;
+	}
+	
+
+#Educ
+	{
+		
+    position: relative;
+    left: 420px;
+    margin-top: -225px;
+
+		
+	}
+	#TechSkl
+	{
+		position: relative;
+	    margin-top: 50px;
+    
+	}
+	#AdSkl
+	{
+	 position: relative;
+    left: 420px;
+    margin-top: -256px;
+
+	}
+
+	#mailLink {
+		margin: 0px 20%
+	}
+}
+
+@media (max-width:500px)
+{
+		.cont1
+	{
+	width:auto;
+	height:auto;
+	max-width:700px;
+	
+	
+	
+	
+	}
+	
+	
+		#galleria
+	{
+		width:95vw;
+		margin:0 auto;
+		margin-top: 50px;
+	}
+}
+
+@media (min-width: 1200px)
+{
+		#galleria
+	{
+		width:1000px;
+		margin-top: 50px;
+	}
+}
+@media (max-width:857px){
+	#selfy{
+		display:block;
+		margin: 0px auto;
+	}
+#Educ
+	{
+		
+    margin:30px auto;
+
+		
+	}
+	#TechSkl
+	{
+		margin:30px auto;
+	}
+	#AdSkl
+	{
+	 margin:30px auto;
+	}
+}
+@media only screen and (max-device-width: 480px) 
+{
+	
+	@font-face{
+	font-family:"tuffy";
+	src: url(Tuffy.ttf) format("truetype");
+	
+}
+
+body
+{
+	background-color:#99ddff;
+	min-width:320px;
+}
+
+h1{
+	font-family:"Tuffy", Verdana, Tahoma;
+	font-size:26pt;
+	text-align:center;
+	
+	color:black;
+	
+	
+}
+
+h3{
+	font-family:"Tuffy", Verdana, Tahoma;
+	font-size:16pt;
+	
+	color:black;
+}
+
+h4{
+	font-family:"Tuffy", Verdana, Tahoma;
+	font-size:14pt;
+	
+	color:black;
+}
+
+p
+{
+	font-family:"Tuffy", Verdana, Tahoma;
+	font-size:13pt;
+	
+	color:black;
+}
+
+#welcome 
+{
+	  display: inline-block;
+  	  font-size: 50px;
+  	  padding: 3px 20px;
+  	  border: 4px solid white;
+  	  color: white;
+	
+}
+
+
+#name
+{
+	position:absolute;
+	margin-left:20%;
+	bottom:-13px;
+	color: white;
+}
+
+#PortfolioTitle
+{
+	position:absolute;
+	right:20%;
+	bottom:-13px;
+	color:#99ddff;
+}
+
+#ContactTitle
+{
+	position:absolute;
+	left: 20%;
+	bottom:-13px;
+	color:#3399ee;
+}
+
+#title
+{
+	position:absolute;
+	top:5px;
+	left:20px;
+	width:300px;
+	height:105px;
+	background-image:url(title3.png);
+	background-repeat:no-repeat;
+}
+
+
+
+#body
+{
+	
+	position:absolute;
+	right:0px;
+	/*margin-left:-10px;
+	margin-right:-10px;*/
+	left:0px;
+	/*position:relative;*/
+	top:158px;
+	border-top: medium solid #FFF;
+	/*background-color:red;*/
+	width:100%;
+	min-height:800px;
+	padding-top:10px;
+	padding-bottom:20px;
+	height:auto;
+	
+	
+	
+}
+
+
+#inner
+{
+	
+	min-width:280px;
+	width:80%;	
+	margin:0 auto;
+	/*border: solid 3px black;	*/
+	padding-top:10px;
+	padding-left:5px;
+	padding-right:5px;
+	padding:10px 5px 15px 5px;
+}
+
+/* Home Page */
+.resume
+{ 	
+	width:250px;
+}
+
+
+
+/* Contact Psge */
+
+/*#mgsBox
+{
+	width:180px;
+	height:100px;
+}*/
+
+
+/* Portfolio Page */
+
+.galPic
+{
+	min-width:240px;
+	width:70%;	
+	max-width:500px;
+}
+
+#viewer
+{
+	min-width:240px;
+	width:70%;	
+}
+ .cont2
+ {
+	 margin: 0px 5%;
+ }
+ 
+
+	
+	
+		.cont1
+	{
+
+	width:auto;
+	height:auto;
+	max-width:700px;
+	
+	
+	
+	
+	}
+	
+	
+		#galleria
+	{
+		width:95vw;
+		margin:0 auto;
+		margin-top: 50px;
+	}
+	
+	
+	
+
+}
+
+
