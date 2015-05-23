@@ -224,9 +224,14 @@
 	#group2 {
 		height: 1400px;
 	}
+	#group4 {
+		height: 500px;
+	}
 #group4 .parallax__layer--base {
-	  background: #3399ee;
-   	  min-height: 800px;
+		position: relative;
+  		background: #3399ee;
+  /* min-height: 910px; */
+  		padding-bottom: 50px;
   }
 }
 
