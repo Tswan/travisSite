@@ -4,7 +4,6 @@
 @font-face{
 	font-family:"tuffy";
 	src: url(Tuffy.ttf) format("truetype");
-	
 }
 
 body
@@ -21,6 +20,11 @@ h1{
 	color:black;
 	
 	
+}
+
+h2
+{
+	font-size: 17px;
 }
 
 h3{
@@ -44,33 +48,27 @@ p
 	
 	color:black;
 }
-	#welcome 
+
+#welcome 
 {
 	  display: inline-block;
-  	  font-size: 50px;
-  	  padding: 3px 20px;
-  	  border: 4px solid white;
+  	  width: 80%;
   	  color: white;
-	
 }
 
 #header
 {
-	/*position:relative;*/
 	position:absolute;
 	left:0px;
 	top:0px;
 	right:0px;
-	/*margin-left:-10px;
-	margin-right:-10px;*/
 	width:100%;
 	height:105px;
-	/*background-image:url(title2.png);
-	background-repeat:no-repeat;*/
 	border-bottom:medium inset black;
 }
 
-#banner {
+#banner 
+{
 	display: inline-block;
 	margin: 0 auto;
 	width: 70vw;
@@ -96,7 +94,7 @@ p
 {
 	position:absolute;
 	left: 20%;
-	bottom:-13px;
+	 margin-top: -39px;
 	color:#3399ee;
 }
 
@@ -113,13 +111,10 @@ p
 
 #navi
 {
-	/*position:relative;*/
 	position:absolute;
 	left:0px;
 	top:113px;
 	right:0px;
-	/*margin-left:-10px;
-	margin-right:-10px;*/
 	width:100%;
 	height:30px;
 	border-top: solid 3px white;
@@ -130,34 +125,23 @@ p
 
 #body
 {
-	
 	position:absolute;
 	right:0px;
-	/*margin-left:-10px;
-	margin-right:-10px;*/
 	left:0px;
-	/*position:relative;*/
 	top:158px;
 	border-top: medium solid #FFF;
-	/*background-color:red;*/
 	width:100%;
 	min-height:800px;
 	padding-top:10px;
 	padding-bottom:20px;
 	height:auto;
-	
-	
-	
 }
-
 
 #inner
 {
-	
 	min-width:280px;
 	width:80%;	
 	margin:0 auto;
-	/*border: solid 3px black;	*/
 	padding-top:10px;
 	padding-left:5px;
 	padding-right:5px;
@@ -167,9 +151,14 @@ p
 /* Home Page */
 .resume
 { 	
-	width:250px;
+	width:50%;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
-
+#values 
+{
+	text-align: center;
+}
 
 .galPic
 {
@@ -183,30 +172,100 @@ p
 	min-width:240px;
 	width:70%;	
 }
- .cont2
- {
-	 margin: 0px 5%;
- }
- 
-.cont1
+
+.content
 {
+	padding-top:50px;
 	width:auto;
 	height:auto;
 	max-width:700px;
-	margin: 0 auto;
-	
-	
-	
+	margin: 0 auto;	
 }
 
-#linksContainer {
-	margin: 40px auto 0px;
+#linksContainer 
+{
+	margin: 0px auto;
  	position: relative;
   	width: 100%;
   	text-align: center;
 }
 
+#linksContainer a 
+{
+  	color: transparent;
+}
 
+#selfy
+{
+	border-radius: 135px;
+	width: 230px;
+	height: 230px;
+	display:block;
+	margin: 0px auto;
+}
+
+* 
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container 
+{
+	background: transparent;
+	width: 100%;
+	margin: 5vw 5%;
+	height: auto;
+}
+
+.item 
+{
+	width: 45%;
+	height: auto;
+	float: left;
+	background: #09F;
+	margin-bottom: 5px;
+}
+
+
+.item.w2 
+{ 
+	width: 45%; 
+}
+
+.mason-pic 
+{
+	width: 100%;
+	height:auto;
+}
+
+.mason-shadow
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.mason-shadow:hover 
+{
+	animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+    -webkit-box-shadow: inset 0px 0px 163px 20px rgba(0,0,0,0.57);
+	-moz-box-shadow: inset 0px 0px 163px 20px rgba(0,0,0,0.57);
+	box-shadow: inset 0px 0px 163px 20px rgba(0,0,0,0.57);
+}
+.stamp 
+{
+	background: red;
+	opacity: 0.75;
+	position: absolute;
+	border: 1px solid;
+}
 
 /*SPECIAL FOR GALLERIA*/
 
@@ -257,47 +316,22 @@ p
         opacity: 1;
     }
 }
-@media (min-width: 501) and (max-width:857px)
-{
 
-	
+@media (min-width: 501) and (max-width:857px){
 	#galleria
 	{
 		width:90vw;
 		margin:0 auto;
 		margin-top: 50px;
-	
 	}
-	
-	
 }
 
-@media (min-width:858px)
-{
+@media (min-width:858px){
 	#welcome 
-{
+	{
 	  display: inline-block;
-  	  font-size: 100px;
-  	  padding: 3px 30px;
-  	  border: 4px solid white;
+  	  width: 80%;
   	  color: white;
-	
-}
-
-	
-	.cont1
-	{
-		
-	}
-	#title
-	{
-		position:absolute;
-		top:5px;
-		left:30%;
-		width:300px;
-		height:105px;
-		background-image:url(title3.png);
-		background-repeat:no-repeat;
 	}
 	
 	.resume
@@ -305,50 +339,58 @@ p
 		position:relative;
 	}
 	
-
-#Educ
+	#welcome-text
 	{
-		
-    position: relative;
-    left: 420px;
-    margin-top: -225px;
-
-		
+   	 	width: 100%;
+    	text-align: center;
 	}
+
+	#values 
+	{
+		width: 100%;
+	}
+
+	#Educ
+	{
+		position: absolute;
+	    width: 200px;
+	    margin-top: 0px;
+	}
+
 	#TechSkl
 	{
-		position: relative;
-	    margin-top: 50px;
-    
+		width: 250px;
+		margin: 0px auto;
+		margin-top: 0px;
 	}
+
 	#AdSkl
 	{
-	 position: relative;
-    left: 420px;
-    margin-top: -256px;
-
+		width: 200px;
+		float: right;
+		margin-top: -156px;
 	}
-/*
-	#mailLink {
-		margin: 0px 20%
-	}*/
+
+	.item 
+	{
+		width:  17.5%;
+	}
+
+	.item.w2 
+	{ 
+		width: 17.5%; 
+	}
 }
 
-@media (max-width:500px)
-{
-		.cont1
+@media (max-width:500px){
+	.cont1
 	{
-	width:auto;
-	height:auto;
-	max-width:700px;
-	
-	
-	
-	
+		width:auto;
+		height:auto;
+		max-width:700px;
 	}
 	
-	
-		#galleria
+	#galleria
 	{
 		width:95vw;
 		margin:0 auto;
@@ -356,228 +398,133 @@ p
 	}
 }
 
-@media (min-width: 1200px)
-{
-		#galleria
+@media (min-width: 1200px){
+	#galleria
 	{
 		width:1000px;
 		margin-top: 50px;
 	}
 }
+
 @media (max-width:857px){
-	#selfy{
-		display:block;
-		margin: 0px auto;
-	}
-#Educ
+	.resume
 	{
-		
-    margin:30px auto;
-
-		
+		margin:30px auto;	
 	}
-	#TechSkl
+}
+
+@media (max-width: 480px) {
+
+	#welcome 
 	{
-		margin:30px auto;
+		  display: inline-block;
+	  	  width:95%;
+	  	  color: white;
 	}
-	#AdSkl
+
+	#name
 	{
-	 margin:30px auto;
+		position:absolute;
+		margin-left:20%;
+		bottom:-13px;
+		color: white;
 	}
-}
-@media only screen and (max-device-width: 480px) 
-{
-	
-	@font-face{
-	font-family:"tuffy";
-	src: url(Tuffy.ttf) format("truetype");
-	
-}
 
-body
-{
-	background-color:#99ddff;
-	min-width:320px;
-}
-
-h1{
-	font-family:"Tuffy", Verdana, Tahoma;
-	font-size:26pt;
-	text-align:center;
-	
-	color:black;
-	
-	
-}
-
-h3{
-	font-family:"Tuffy", Verdana, Tahoma;
-	font-size:16pt;
-	
-	color:black;
-}
-
-h4{
-	font-family:"Tuffy", Verdana, Tahoma;
-	font-size:14pt;
-	
-	color:black;
-}
-
-p
-{
-	font-family:"Tuffy", Verdana, Tahoma;
-	font-size:13pt;
-	
-	color:black;
-}
-
-#welcome 
-{
-	  display: inline-block;
-  	  font-size: 40px;
-  	  padding: 3px 20px;
-  	  border: 4px solid white;
-  	  color: white;
-	
-}
-
-
-#name
-{
-	position:absolute;
-	margin-left:20%;
-	bottom:-13px;
-	color: white;
-}
-
-#PortfolioTitle
-{
-	position:absolute;
-	right:20%;
-	bottom:-13px;
-	color:#99ddff;
-}
-
-#ContactTitle
-{
-	position:absolute;
-	left: 20%;
-	bottom:-13px;
-	color:#3399ee;
-}
-
-#title
-{
-	position:absolute;
-	top:5px;
-	left:20px;
-	width:300px;
-	height:105px;
-	background-image:url(title3.png);
-	background-repeat:no-repeat;
-}
-
-
-
-#body
-{
-	
-	position:absolute;
-	right:0px;
-	/*margin-left:-10px;
-	margin-right:-10px;*/
-	left:0px;
-	/*position:relative;*/
-	top:158px;
-	border-top: medium solid #FFF;
-	/*background-color:red;*/
-	width:100%;
-	min-height:800px;
-	padding-top:10px;
-	padding-bottom:20px;
-	height:auto;
-	
-	
-	
-}
-
-
-#inner
-{
-	
-	min-width:280px;
-	width:80%;	
-	margin:0 auto;
-	/*border: solid 3px black;	*/
-	padding-top:10px;
-	padding-left:5px;
-	padding-right:5px;
-	padding:10px 5px 15px 5px;
-}
-
-/* Home Page */
-.resume
-{ 	
-	width:250px;
-}
-
-
-
-/* Contact Psge */
-
-/*#mgsBox
-{
-	width:180px;
-	height:100px;
-}*/
-
-
-/* Portfolio Page */
-
-.galPic
-{
-	min-width:240px;
-	width:70%;	
-	max-width:500px;
-}
-
-#viewer
-{
-	min-width:240px;
-	width:70%;	
-}
- .cont2
- {
-	 margin: 0px 5%;
- }
- 
-
-	
-	
-		.cont1
+	#PortfolioTitle
 	{
+		position:absolute;
+		right:20%;
+		bottom:-13px;
+		color:#99ddff;
+	}
 
-	width:auto;
-	height:auto;
-	max-width:700px;
-	
-	
-	
-	
+	#ContactTitle
+	{
+		position:absolute;
+		left: 20%;
+		color:#3399ee;
+	}
+
+	#body
+	{
+		position:absolute;
+		right:0px;
+		left:0px;
+		top:158px;
+		border-top: medium solid #FFF;
+		width:100%;
+		min-height:800px;
+		padding-top:10px;
+		padding-bottom:20px;
+		height:auto;
+	}
+
+	#inner
+	{
+		min-width:280px;
+		width:80%;	
+		margin:0 auto;
+		padding-top:10px;
+		padding-left:5px;
+		padding-right:5px;
+		padding:10px 5px 15px 5px;
+	}
+
+	/* Home Page */
+	.resume
+	{ 	
+		width:250px;
+	}
+
+	/* Portfolio Page */
+
+	.galPic
+	{
+		min-width:240px;
+		width:70%;	
+		max-width:500px;
+	}
+
+	#viewer
+	{
+		min-width:240px;
+		width:70%;	
+	}
+	.cont1
+	{
+		margin: 0px 5%;
+		width:auto;
+		height:auto;
+		max-width:700px;
 	}
 	
-	
-		#galleria
+	#galleria
 	{
 		width:95vw;
 		margin:0 auto;
 		margin-top: 50px;
 	}
-	
-	
-	
 
+	.container 
+	{ 
+		margin-bottom: 30px;
+	}
+	
+	#linksContainer 
+	{
+	    width: 80%;
+	}
 }
 
+@media (min-width: 480px) {
+	.item 
+	{
+		width:  30%;
+	}
+
+	.item.w2 
+	{ 
+		width: 30%; 
+	}
+}
 

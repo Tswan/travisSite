@@ -120,11 +120,10 @@
 
   #group4 {
     z-index: 5; /* slide over group 2 */
+    height: 400px;
   }
   #group4 .parallax__layer--base {
-	  background: #3399ee;
-	  min-height: 615px;
-   
+	  background: #3399ee;   
   }
 
   #group1 {
@@ -157,15 +156,19 @@
   }
 
   #group3 {
-    z-index: 3; /* slide under group 3 and 5 */
-	height: calc(70vw + 50px);
+    z-index: 2; /* slide under group 3 and 5 */
+    height: auto;
+  }
+    #group3 .parallax__layer--base {
+     position: relative;
+     height: auto;
   }
   
  
 
   #group3 .parallax__layer--back {
     background: #99ddff;
-	/*height: 100vh;*/
+	height: 100vh;
   }
 
 
@@ -181,57 +184,35 @@
     width: 100%;
   }
 
-@media (min-width: 501)
-{
-	#group3 {
-    z-index: 2; /* slide under group 3 and 5 */
-	height: calc(50vw + 50px);
-  	}
-	
-	
-}
 
-@media (max-width:857px)
-{
+@media (max-width:857px){
 	#group2 {
-		height: 1400px;
+		height:1020px
 	}
 	#group1 .parallax__layer--fore {
 		top:100px;
 	}
 }
 
-  @media (min-width:858px)
-{
+  @media (min-width:858px){
 	
-	#group3 {
-    z-index: 2; /* slide under group 3 and 5 */
-	height: calc(50vw + 50px);
-  	}
+	
 	#group2 {
-		height: 850px;
+		height: 700px;
 	}
 }
 
-@media only screen and (max-device-width: 480px) 
-{
-	
-	#group3 {
-    z-index: 2; /* slide under group 3 and 5 */
-	height: calc(70vw + 50px);
-  	}
-	
+@media only screen and (max-device-width: 480px) {
 	#group2 {
-		height: 1400px;
+		height: 1000px;
 	}
 	#group4 {
 		height: 500px;
 	}
-#group4 .parallax__layer--base {
+  #group4 .parallax__layer--base {
 		position: relative;
-  		background: #3399ee;
-  /* min-height: 910px; */
-  		padding-bottom: 50px;
+		background: #3399ee;
+		padding-bottom: 50px;
   }
 }
 
