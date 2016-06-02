@@ -18,8 +18,6 @@ h1{
 	text-align:center;
 	
 	color:black;
-	
-	
 }
 
 h2
@@ -176,18 +174,19 @@ p
 .content
 {
 	padding-top:50px;
-	width:auto;
-	height:auto;
-	max-width:700px;
-	margin: 0 auto;	
+	width:100%;
+	height:100%;
+	/*max-width:700px;
+	margin: 0 auto;	*/
 }
 
 #linksContainer 
 {
 	margin: 0px auto;
- 	position: relative;
-  	width: 100%;
-  	text-align: center;
+    position: relative;
+    width: 716px;
+    height: 100%;
+    text-align: center;
 }
 
 #linksContainer a 
@@ -212,11 +211,21 @@ p
 	box-sizing: border-box;
 }
 
+
+.menu
+{
+	position: fixed;
+    width: 100%;
+    height: 40px;
+    top: 0px;
+
+}
+
 .container 
 {
 	background: transparent;
 	width: 100%;
-	margin: 5vw 5%;
+	margin: 0 5% 5vw;
 	height: auto;
 }
 
@@ -225,20 +234,51 @@ p
 	width: 45%;
 	height: auto;
 	float: left;
-	background: #09F;
 	margin-bottom: 5px;
+	text-decoration: none;
 }
-
 
 .item.w2 
 { 
 	width: 45%; 
 }
 
+.mason-media
+{
+	height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.mason-play-button
+{
+	margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+	background-image: url(../img/play.png);
+    height: 50px;
+}
+
 .mason-pic 
 {
 	width: 100%;
 	height:auto;
+}
+
+.mason-description {
+    background-color: white;
+    padding: 5px;
+  	border-top: solid #CCC 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.mason-description p {
+    font-size: 15px;
 }
 
 .mason-shadow
@@ -248,7 +288,10 @@ p
     height: 100%;
     top: 0;
     left: 0;
+   	border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
+
 .mason-shadow:hover 
 {
 	animation: fadein 1s;
@@ -259,12 +302,26 @@ p
 	-moz-box-shadow: inset 0px 0px 163px 20px rgba(0,0,0,0.57);
 	box-shadow: inset 0px 0px 163px 20px rgba(0,0,0,0.57);
 }
+
 .stamp 
 {
 	background: red;
 	opacity: 0.75;
 	position: absolute;
 	border: 1px solid;
+}
+
+.linkTile
+{
+	width: 141px;
+    height: 170px;
+    float: left;
+    margin: 0 19px;
+}
+
+.linkTile p
+{
+	color: white;
 }
 
 /*SPECIAL FOR GALLERIA*/
@@ -326,6 +383,18 @@ p
 	}
 }
 
+@media (max-width:742px) and (min-width:532px){
+	#linksContainer {
+		width: 537px;
+	}
+}
+
+@media (max-width:532px){
+	#linksContainer {
+		width: 358px;
+	}
+}
+
 @media (min-width:858px){
 	#welcome 
 	{
@@ -379,6 +448,12 @@ p
 	.item.w2 
 	{ 
 		width: 17.5%; 
+	}
+
+	.profile
+	{
+		margin: auto;
+        width: 730px;
 	}
 }
 
@@ -477,7 +552,6 @@ p
 	}
 
 	/* Portfolio Page */
-
 	.galPic
 	{
 		min-width:240px;
@@ -510,10 +584,10 @@ p
 		margin-bottom: 30px;
 	}
 	
-	#linksContainer 
+	/*#linksContainer 
 	{
-	    width: 80%;
-	}
+	    padding: 0 5%;
+	}*/
 }
 
 @media (min-width: 480px) {
