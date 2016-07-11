@@ -189,7 +189,7 @@
 
 @media (max-width:857px){
 	#group4 {
-		height:840px;
+		height:850px;
 	}
 }
 
@@ -206,19 +206,19 @@
 
 @media (max-width:742px){
   #group4 {
-    height: 1035px;
+    height: 1075px;
   }
 }
 
 @media (max-width:663px){
   #group4 {
-    height: 1095px;
+    height: 1155px;
   }
 }
 
 @media only screen and (max-device-width: 480px) {
 	#group4 {
-		height: 1100px
+		height: 1150px;
 	}
   #group4 .parallax__layer--base {
 		background: #3399ee;
