@@ -6,7 +6,7 @@ var msnry = new Masonry( '.container', {
 });
 
 function getHref(href) {
-  return (href.indexOf('youtube') == -1 ? 'image' : 'swf');
+  return (href.indexOf('youtube') == -1 ? 'image' : 'iframe');
 } 
 
 $(".fancybox").click(function () {

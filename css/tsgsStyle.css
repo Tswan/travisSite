@@ -16,7 +16,6 @@ h1{
 	font-family:"Tuffy", Verdana, Tahoma;
 	font-size:26pt;
 	text-align:center;
-	
 	color:black;
 }
 
@@ -50,8 +49,8 @@ p
 #welcome 
 {
 	  display: inline-block;
-  	  width: 100%;
-  	  padding: 0 10%;
+  	  /*width: 100%;*/
+  	  margin: 0 10%;
   	  fill: white;
 }
 
@@ -154,6 +153,12 @@ p
 	margin-bottom: 30px;
 	color: white;
 }
+
+.resume p, .resume h3
+{ 	
+	color: white;
+}
+
 #values 
 {
 	text-align: center;
