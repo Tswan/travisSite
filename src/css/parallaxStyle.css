@@ -135,7 +135,7 @@
 	background-size:cover;
   }
   #group1 .parallax__layer--fore {
-	  top: -320%;
+	  /*top: -320%;*/
 	  text-align:center;
   }
   #group1 .parallax__layer--fore:before {

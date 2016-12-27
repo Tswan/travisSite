@@ -1,4 +1,4 @@
 src/img/
+dist/img/
 node_modules/
-Gruntfile.js
 package.json
