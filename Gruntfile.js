@@ -8,7 +8,7 @@ module.exports = function(grunt) {
       },
       dist: {
         //src: ['src/**/*.js'],
-        src: ['src/js/jquery-1.10.1.min.js', 'src/js/masonry.pkgd.js', 'src/js/masonry.js', 'src/js/script.js', 'src/js/jquery.fancybox.js'],
+        src: ['src/js/jquery-1.10.1.min.js', 'bower_components/imagesloaded/imagesloaded.pkgd.js', 'bower_components/masonry/dist/masonry.pkgd.js', 'src/js/jquery.fancybox.js', 'src/js/script.js'],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
     },

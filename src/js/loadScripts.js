@@ -8,10 +8,11 @@ else window.onload = downloadJSAtOnload();
 function downloadJSAtOnload() {
   //Loading Jquery
   loadScript('js/jquery-1.10.1.min.js',function(){
-    //Loading masonry package
-    loadScript('js/masonry.pkgd.js',function(){
-      //Loading masonry
-      loadScript('js/masonry.js',function(){
+      //Loading masonry package
+    loadScript('../bower_components/imagesloaded/imagesloaded.pkgd.js',function(){
+      //loading masonry package
+      loadScript('../bower_components/masonry/dist/masonry.pkgd.js',function(){
+
         //Loading init script
         loadScript('js/script.js',function(){
         });
