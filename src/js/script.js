@@ -62,4 +62,12 @@ $('.fancybox').click(function () {
     }
   });
 });
+
+bodymovin.loadAnimation({
+  container: $('#Github'), // the dom element
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: '../img/Github/data.json' // the animation data
+});
 //} 

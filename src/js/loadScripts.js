@@ -12,15 +12,18 @@ function downloadJSAtOnload() {
     loadScript('../bower_components/imagesloaded/imagesloaded.pkgd.js',function(){
       //loading masonry package
       loadScript('../bower_components/masonry/dist/masonry.pkgd.js',function(){
-
-        //Loading init script
-        loadScript('js/script.js',function(){
+        loadScript('js/bodymovin.js',function(){
+         
+          //Loading init script
+          loadScript('js/script.js',function(){
+          });
         });
       });
     });
     //Loading fancy box
     loadScript('js/jquery.fancybox.js',function(){
     });
+
   });
   
 
