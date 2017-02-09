@@ -63,11 +63,35 @@ $('.fancybox').click(function () {
   });
 });
 
+$.getJSON("js/data.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+});
 bodymovin.loadAnimation({
-  container: $('#Github'), // the dom element
+  container: document.getElementById('Github'), // the dom element
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: '../img/Github/data.json' // the animation data
+  path: 'img/Github/data.json' // the animation data
+});
+bodymovin.loadAnimation({
+  container: document.getElementById('Resume'), // the dom element
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'img/Resume/data.json' // the animation data
+});
+bodymovin.loadAnimation({
+  container: document.getElementById('Linkedin'), // the dom element
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'img/Linkedin/data.json' // the animation data
+});
+bodymovin.loadAnimation({
+  container: document.getElementById('Email'), // the dom element
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'img/Email/data.json' // the animation data
 });
 //} 
