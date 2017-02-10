@@ -8,7 +8,7 @@ module.exports = function(grunt) {
       },
       dist: {
         //src: ['src/**/*.js'],
-        src: ['src/js/jquery-1.10.1.min.js', 'bower_components/imagesloaded/imagesloaded.pkgd.js', 'bower_components/masonry/dist/masonry.pkgd.js', 'src/js/jquery.fancybox.js', 'src/js/script.js'],
+        src: ['src/js/jquery-1.10.1.min.js', 'bower_components/imagesloaded/imagesloaded.pkgd.js', 'bower_components/masonry/dist/masonry.pkgd.js', 'src/js/jquery.fancybox.js', 'src/js/bodymovin.js', 'src/js/script.js'],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
     },
@@ -27,7 +27,10 @@ module.exports = function(grunt) {
         files: [
           // includes files within path 
           {expand: true, flatten:true, src: ['src/css/Tuffy.ttf'], dest: 'dist/css', filter: 'isFile'},
-          {expand: true, flatten:true, src: ['src/img/tabIcon.ico'], dest: 'dist/img', filter: 'isFile'}
+          {expand: true, flatten:true, src: ['src/img/Email/data.json'], dest: 'dist/img/Email', filter: 'isFile'}
+          {expand: true, flatten:true, src: ['src/img/Github/data.json'], dest: 'dist/img/Github', filter: 'isFile'}
+          {expand: true, flatten:true, src: ['src/img/Linkedin/data.json'], dest: 'dist/img/Linkedin', filter: 'isFile'}
+          {expand: true, flatten:true, src: ['src/img/Resume/data.json'], dest: 'dist/img/Resume', filter: 'isFile'}
         ],
       },
     },
