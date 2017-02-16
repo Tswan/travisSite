@@ -63,10 +63,21 @@ $('.fancybox').click(function () {
   });
 });
 
+var _intro = document.getElementById('Intro');
 var _github = document.getElementById('Github');
 var _resume = document.getElementById('Resume');
 var _linkedin = document.getElementById('Linkedin');
 var _email = document.getElementById('Email');
+
+var intro = bodymovin.loadAnimation({
+  container: _intro, // the dom element
+  renderer: 'svg',
+  loop: false,
+  prerender: false,
+  autoplay: false,
+  autoloadSegments: false,
+  path: 'img/Intro/data.json'
+});
 
 var github = bodymovin.loadAnimation({
   container: _github, // the dom element
@@ -100,6 +111,29 @@ var email = bodymovin.loadAnimation({
   path: 'img/Email/data.json' // the animation data
 });
 
+var intro_fade = false;
+intro.addEventListener('DOMLoaded', function () {//animate in
+            intro.playSegments([0,40],true);
+        });
+
+$('.parallax').scroll( function() {
+    
+    if(getViewportOffset($('#Intro')).top < ($(window).height()*0.05))
+    {
+      if (!intro_fade) {
+        intro_fade = true;
+        intro.playSegments([40,60],true);
+      }
+
+    } else if (getViewportOffset($('#Intro')).top > ($(window).height()*0.28))
+    {
+      if (intro_fade) {
+        intro_fade = false;
+        intro.playSegments([0,40],true);
+      }
+
+    }
+});
 
 github_pause = true;
 _github.addEventListener('mouseover', githubButtonOver);
@@ -225,4 +259,18 @@ function checkIfChild(elem, parent) {
     elem = elem.parentNode;
   }
   return false;
+}
+
+function getViewportOffset($e) {
+  var $window = $(window),
+    scrollLeft = $window.scrollLeft(),
+    scrollTop = $window.scrollTop(),
+    offset = $e.offset(),
+    rect1 = { x1: scrollLeft, y1: scrollTop, x2: scrollLeft + $window.width(), y2: scrollTop + $window.height() },
+    rect2 = { x1: offset.left, y1: offset.top, x2: offset.left + $e.width(), y2: offset.top + $e.height() };
+  return {
+    left: offset.left - scrollLeft,
+    top: offset.top - scrollTop,
+    insideViewport: rect1.x1 < rect2.x2 && rect1.x2 > rect2.x1 && rect1.y1 < rect2.y2 && rect1.y2 > rect2.y1
+  };
 }

@@ -46,6 +46,13 @@ p
 	color:black;
 }
 
+#Intro
+{
+	position: absolute;
+    top: 30%;
+    width: 100%;
+}
+
 #welcome 
 {
 	  display: inline-block;

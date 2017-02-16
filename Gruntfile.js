@@ -27,9 +27,10 @@ module.exports = function(grunt) {
         files: [
           // includes files within path 
           {expand: true, flatten:true, src: ['src/css/Tuffy.ttf'], dest: 'dist/css', filter: 'isFile'},
-          {expand: true, flatten:true, src: ['src/img/Email/data.json'], dest: 'dist/img/Email', filter: 'isFile'}
-          {expand: true, flatten:true, src: ['src/img/Github/data.json'], dest: 'dist/img/Github', filter: 'isFile'}
-          {expand: true, flatten:true, src: ['src/img/Linkedin/data.json'], dest: 'dist/img/Linkedin', filter: 'isFile'}
+          {expand: true, flatten:true, src: ['src/img/Intro/data.json'], dest: 'dist/img/Intro', filter: 'isFile'},
+          {expand: true, flatten:true, src: ['src/img/Email/data.json'], dest: 'dist/img/Email', filter: 'isFile'},
+          {expand: true, flatten:true, src: ['src/img/Github/data.json'], dest: 'dist/img/Github', filter: 'isFile'},
+          {expand: true, flatten:true, src: ['src/img/Linkedin/data.json'], dest: 'dist/img/Linkedin', filter: 'isFile'},
           {expand: true, flatten:true, src: ['src/img/Resume/data.json'], dest: 'dist/img/Resume', filter: 'isFile'}
         ],
       },
@@ -70,7 +71,7 @@ module.exports = function(grunt) {
       },
     },
     jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js','!src/js/jquery-1.10.1.min.js','!src/js/masonry.pkgd.js'],
+      files: ['Gruntfile.js', 'src/**/*.js','!src/js/jquery-1.10.1.min.js','!src/js/masonry.pkgd.js','!src/js/bodymovin.js'],
       options: {
         // options here to override JSHint defaults
         globals: {
